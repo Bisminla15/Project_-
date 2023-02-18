@@ -47,40 +47,48 @@
     </header>
     <br>
 
-    <div class="container center">
-        <div class="row">
+    <div class="container center" style="text-align: center;">
+        <div class="row" style="text-align: center;">
             <div class="col-5" style="margin-left: 350px; margin-top: 130px; width: 800px; height: 350px ; background-color: #c3e6ff; border-radius: 5px">
                 <form>
-                    <h3 class="login-head" style="margin-top: 20px; margin-left: 150px;">
+                    <h3 class="login-head">
                         <span class="material-symbols-outlined">
                             เข้าสู่ระบบ 
                         </span> 
                     </h3>
                     
-                    <div class="form-group; col-md-7" style="margin-left: 80px; margin-top: 20px;">
-                        <label for="exampleInputEmail1">ชื่อผู้ใช้</label>    
-                        <input type="text" class="form-control " id="username" placeholder="ชื่อ" required name="name">
-                        <div class="invalid-feedback">
-                            กรุณากรอกชื่อ.
+                    <div class="form-group">
+                        <div class="col-8" style="margin-left: 80px; margin-top: 30px;">
+                            <label style="margin-right: 180px;">ชื่อผู้ใช้</label>    
+                            <input type="text" class="form-control" id="username" placeholder="ชื่อ" required name="name">
+                            <div class="invalid-feedback">
+                                กรุณากรอกชื่อ.
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="form-group; col-md-7" style="margin-left: 80px; margin-top: 15px;">
-                        <label for="exampleInputPassword1">รหัสผ่าน</label>            
-                        <input type="password" class="form-control " id="password" placeholder="รหัสผ่าน" required name="password">
-                        <div class="invalid-feedback">
-                            กรุณากรอกรหัสรหัสผ่าน.
-                        </div>
+                    <div class="form-group">
+                        <div class="col-8" style="margin-left: 80px; ">
+                            <label for="exampleInputPassword1" style="margin-right: 180px;">รหัสผ่าน</label>            
+                            <input type="password" class="form-control " id="password" placeholder="รหัสผ่าน" required name="password">
+                            <div class="invalid-feedback">
+                                กรุณากรอกรหัสรหัสผ่าน.
+                            </div>
+                        </div>    
                     </div>
                     <br>
 
-                    <div class="form-check" style="text-align: center;">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" style="margin-top: 15px;">
-                        <label class="form-check-label" for="exampleCheck1" style="margin: 11px 20px;">จำรหัสผ่าน</label>
+                    <div class="form-check" style="margin-top: -10px;">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" >
+                        <label class="form-check-label" for="exampleCheck1" style="margin-left: 15px;">จำรหัสผ่าน</label>
+
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2" style="margin-left: 5px;">
+                        <label class="form-check-label" for="exampleCheck2" style="margin-left: 20px;">ลืมรหัสผ่าน</label>
                     </div>
+                    
                 
-                    <button type="button" class="btn btn-success" style="margin-left: 135px;">ตกลง</button>
-                    <button type="button" class="btn btn-danger" style="margin: 25px 20px;">ยกเลิก</button>
+                    <button type="button" class="btn btn-success" style="text-align: center; margin: 25px 30px;">ตกลง</button>
+                    <button type="button" class="btn btn-danger" style="text-align: center; margin: 25px 30px;">ยกเลิก</button>
                 </form>
             </div>
         </div>
