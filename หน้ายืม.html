@@ -51,16 +51,15 @@
 <body>
     <header>
         <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">ประเภทวัสดุและครุภัณฑ์</a></li>
-            <li><a href="#about">ตรวจสอบสถานะและจำนวน</a></li>
-            <li><a href="#about">จองคอร์สอบรมออนไลน์</a></li>
+            <li><a class="active" href="หน้าคืน.html">หน้าหลัก</a></li>
+            <li><a href="ประเภท.html">ประเภทวัสดุและครุภัณฑ์</a></li>
+            <li><a href="สถานะและจำนวน.html">ตรวจสอบสถานะและจำนวน</a></li>
+            <li><a href="คอร์สออนไลน์.html">จองคอร์สอบรมออนไลน์</a></li>
         </ul>
-    
     </header>
 
     <div class="container mt-3">
-        <h3>บันทึกการยืมวัสดุและครุภัณฑ์</h3>
+        <h3>บันทึกการยืม</h3>
         <div>
             <button id="btn_new">เพิ่มรายการยืม</button>
         </div>
@@ -68,7 +67,7 @@
             <thead>
                 <tr>
                     <th>ลำดับ</th>
-                    <th>วันที่บันทึกการยืม</th>
+                    <th>วันที่ยืม</th>
                     <th>ประเภท</th>
                     <th>ชื่อวัสดุและครุภัณฑ์</th>
                     <th>จำนวน</th>
@@ -103,7 +102,7 @@
 
                             <div class="form-group">
                                 <i class='fas fa-phone-alt'></i>
-                                <label for="exampleInputPassword1" style="margin-top: -15px;">วันที่บันทึกการยืม</label>
+                                <label for="exampleInputPassword1" style="margin-top: -15px;">วันที่ยืม</label>
                                 <input type="text" class="form-control" id="txtrec" name="rec"
                                     placeholder="กรอกลำดับ"
                                     oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1') ;" />
@@ -174,7 +173,7 @@
 
                             <div class="form-group">
                                 <i class='fas fa-phone-alt'></i>
-                                <label for="exampleInputPassword1" style="margin-top: -15px;">วันที่บันทึกการยืม</label>
+                                <label for="exampleInputPassword1" style="margin-top: -15px;">วันที่ยืม</label>
                                 <input type="text" class="form-control" id="txterec" name="rec"
                                     placeholder="กรอกลำดับ"
                                     oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1') ;" />
@@ -368,6 +367,8 @@
             });
             loadUsers();
         });
+
     </script>
+
 </body>
 </html>
