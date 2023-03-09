@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" 
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://demo.itoffside.com/eqborrow/assets/css/main-login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <title>อนุมัติ</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #bfeaff;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #bfeaff;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a class="active" href="หน้าหลัก.html">หน้าหลัก</a></li>
+            <li><a href="ประเภท.html">ประเภทวัสดุและครุภัณฑ์</a></li>
+            <li><a href="สถานะและจำนวน.html">ตรวจสอบสถานะและจำนวน</a></li>
+            <li><a href="คอร์สออนไลน์.html">จองคอร์สอบรมออนไลน์</a></li>
+        </ul>
+        
+    </header>
+    
+    <div id="skip" class="clear">
+        <main id="content" class="animation">
+            <section class="content_bg">
+
+                <div class="breadcrumbs" >
+                    <ul style="background-color: #e4f5fe;">
+                        <li style="background-color: #e4f5fe;">
+                            <span class="icon-exchange">ยืม >>> </span>
+                        </li>
+                        <li>
+                            <span> อนุมัติ </span>
+                        </li>
+                    </ul>
+                </div>
+                <br/>
+
+                <div class="datatable" id="datatable">
+                    <form class="table_nav clear" method="get" action="http://127.0.0.1:5501/%E0%B8%A3%E0%B8%AD%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A.html"><div>
+                        <fieldset>
+                            <label>แสดง 
+                                <select name="count">
+                                    <option value="10">10 รายการ</option>
+                                    <option value="20">20 รายการ</option>
+                                    <option value="30" selected="">30 รายการ</option>
+                                    <option value="40">40 รายการ</option>
+                                    <option value="50">50 รายการ</option>
+                                    <option value="100">100 รายการ</option>
+                                </select>
+                            </label>
+                        </fieldset>
+                    </form>
+                    <div class="tablebody">
+                        <table class="fullwidth">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th id="c0" class="sort_none col_borrow_no" tabindex="0" style="cursor: pointer;">ลำดับ</th>
+                                        <th id="c1" class="sort_none col_borrow_date center" tabindex="0" style="cursor: pointer;">วันที่ยืม</th>
+                                        <th id="c2">ประเภท</th>
+                                        <th id="c3" class="sort_none col_topic" tabindex="0" style="cursor: pointer;">ชื่อวัสดุและครุภัณฑ์</th>
+                                        <th id="c4" class="center">จำนวน</th>
+                                        <th id="c5" class="sort_none col_return_date center" tabindex="0" style="cursor: pointer;">ครบกำหนด</th>
+                                        <th id="c6">หมายเหตุ</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tuserdata"> </tbody>
+                            </table>
+                            
+                            <!--<tbody>
+                                <tr id="datatable_0" class="sort">
+                                    <th data-text="No." class="nowrap" id="r0" headers="c0">
+                                        <a href=""></a>
+                                    </th>
+                                    <td data-text="พัสดุ" class="topic" headers="c1 r0">
+                                        <a class="two_lines" href=""></a>
+                                    </td>
+                                    <td data-text="จำนวน" class="center" headers="c2 r0">1</td>
+                                    <td data-text="วันที่ยืม" class="center nowrap" headers="c3 r0"></td>
+                                    <td data-text="กำหนดคืน" class="center nowrap" headers="c4 r0"></td>
+                                    <td data-text="" class="buttons" headers="c5 r0"><a class="button red" id="delete_119_0" title="ลบ" tabindex="0" style="cursor: pointer;">
+                                        <span class="icon-delete button_w_text">
+                                            <span class="mobile">ลบ</span>
+                                        </span>
+                                    </a>
+                                    <a class="button green" href="https://borrow.acc.in.th/index.php?_module=borrow-setup&amp;_type=0&amp;module=borrow&amp;id=119" title="แก้ไข">
+                                        <span class="icon-edit button_w_text">
+                                            <span class="mobile">แก้ไข</span>
+                                        </span>
+                                    </a>
+                                    <a class="button orange" id="detail_119" title="รายละเอียด" tabindex="0" style="cursor: pointer;">
+                                        <span class="icon-info button_w_text">
+                                            <span class="mobile">รายละเอียด</span>
+                                        </span>
+                                    </a>
+                                </td>
+                                </tr>
+                            </tbody>-->
+                        </table>
+                    </div>
+                    <div class="table_nav clear action">
+                        <a class="float_button" href="" title="ทำรายการยืม">
+                            <span class="icon-new"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>    
+    </div>
+
+    
+</body>
+</html>
