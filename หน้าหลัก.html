@@ -12,7 +12,6 @@
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://demo.itoffside.com/eqborrow/assets/css/main-login.css">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <title> หน้าหลัก </title>
@@ -42,100 +41,74 @@
             background-color: #bfeaff;
         }
 
-</style>
+    </style>
 
 </head>
 
 <body>
     <header>
         <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">ประเภทวัสดุและครุภัณฑ์</a></li>
-            <li><a href="#contact">ตรวจสอบจำนวน</a></li>
-            <li><a href="#about">ตรวจสอบสถานะ</a></li>
-        </ul>
-
-            <!-- <div class="mx-auto order-0">
-                <ion-icon name="menu-outline"></ion-icon> 
-                 <i class="fas fa-bars"></i>
-            </div> -->
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-
-            <!-- <label for="country">หน้าหลัก</label>
-            <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-            </select> -->
-        
+            <li><a class="active" href="หน้าคืน.html">หน้าหลัก</a></li>
+            <li><a href="ประเภท.html">ประเภทวัสดุและครุภัณฑ์</a></li>
+            <li><a href="สถานะและจำนวน.html">ตรวจสอบสถานะและจำนวน</a></li>
+            <li><a href="คอร์สออนไลน์.html">จองคอร์สอบรมออนไลน์</a></li>
+        </ul>  
     </header>
     <br/>
-
-    <!-- <div class="breadcrumbs">
-        <ul>
-            <span class="icon-home">
-                <h4>หน้าหลัก</h4>
-            </span>
-        </ul>
-    </div> -->
-
-    <div class="container">
-        <div class="row">
-            
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="headline">
-                        <div class="col-md-6 col-sm-6" style="height: 130px;">
-                            <div class="carousel-inner">
-                                <span>
-                                    "ครบกำหนดวันยืม"
-                                </span>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6" style="height: 130px;">
-                            <div class="carousel-inner">
-                                <span>
-                                    "ตรวจสอบสถานะวัสดุ อุปกรณ์"
-                                </span>
-                            </div>
-                        </div>
+    <div id="skip" class="clear">
+        <main id="content" class="animation">
+            <section class="content_bg">
+    
+                <div class="dashboard clear">
+                    <div class="card">
+                        <a class="card-item; btn btn-warning text-center" href="รอตรวจสอบ.html">
+                            <span class="card-subitem icon-exchange icon"></span>
+                            <span class="card-subitem">
+                                <span class="cuttext title" title="การยืม">การยืม</span>
+                                <b class="cuttext">0</b>
+                                <span class="cuttext title" title="รายการยืม">รายการยืม(รอตรวจสอบ)</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="card-item; btn btn-success text-center" href="index.php?module=borrow-setup&amp;status=0">
+                            <span class="card-subitem icon-exchange icon"></span>
+                            <span class="card-subitem">
+                                <span class="cuttext title" title="การยืม">การยืม</span>
+                                <b class="cuttext">0</b>
+                                <span class="cuttext title" title="รายการยืม">รายการยืม(อนุมัติ)</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="card-item; btn btn-danger text-center" href="อนุมัติ.html">
+                            <span class="card-subitem icon-valid icon"></span>
+                            <span class="card-subitem">
+                                <span class="cuttext title" title="การคืน">การคืน</span>
+                                <b class="cuttext">0</b>
+                                <span class="cuttext title" title="รายการครบกำหนดคืน">รายการครบกำหนดคืน</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="card-item; btn btn-primary text-center" href="คอร์สออนไลน์.html">
+                            <span class="card-subitem icon-warning icon"></span>
+                            <span class="card-subitem">
+                                <span class="cuttext title" title="จองคอร์สอบรมออนไลน์">จองคอร์สอบรมออนไลน์</span>
+                                <b class="cuttext">0</b>
+                                <span class="cuttext title" title="รายการจองคอร์ส">รายการจองคอร์ส</span>
+                            </span>
+                        </a>
                     </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </main>
     </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3" style="background-color: #7ef3fd; width: 20px; height: 120px; margin: 5px -15px;">
-                <div class="form-group">
-                    <h4>การยืม</h4>
-                    <h3>0</h3>
-                    <h4>จำนวนรายการที่ยืม</h4>
-                </div>                
-            </div> 
-            <br>
-            <div class="col-md-3" style="background-color: #7ef3fd; width: 20px; height: 120px; margin: 5px 130px;">
-                <div class="form-group">
-                    <h4>การคืน</h4>
-                    <h3>0</h3>
-                    <h4>จำนวนรายการที่คืน</h4>
-                </div>                
-            </div> 
-            <br>
-            <div class="col-md-3" style="background-color: #7ef3fd; width: 20px; height: 120px; margin: 5px -15px;">
-                <div class="form-group">
-                    <h4>จองคอร์สอบรมออนไลน์</h4>
-                    <h3>0</h3>
-                    <h4>จำนวนรายการที่จอง</h4>
-                </div>                
-            </div> 
-            <br>
-        </div>
-    </div>
-
+    <script>
+        $G(window).Ready(function (){
+            initWeb();
+        });
+    </script>
+    
 </body>
-
 </html>
