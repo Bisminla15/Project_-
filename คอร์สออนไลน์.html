@@ -23,7 +23,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #333;
+            background-color: #bfeaff;
         }
 
         li {
@@ -32,61 +32,28 @@
 
         li a {
             display: block;
-            color: white;
+            color: rgb(0, 0, 0);
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
 
         li a:hover {
-            background-color: #111;
+            background-color: #bfeaff;
         }
-        /* .btn-group .button {
-            background-color: #4CAF50; /* Green 
-            border: none;
-            color: white;
-            padding: 10px 23px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 13px;
-            cursor: pointer;
-            /* float: left; 
-        }
-
-        .btn-group .button:hover {
-            background-color: #3e8e41;
-        } */
-</style>
+        
+    </style>
 
 </head>
 
 <body>
     <header>
         <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">การคืน</a></li>
-            <li><a href="#news">การยืม</a></li>
-            <li><a href="#contact">ตรวจสอบจำนวน</a></li>
-            <li><a href="#about">ตรวจสอบสถานะ</a></li>
+            <li><a class="active" href="หน้าคืน.html">หน้าหลัก</a></li>
+            <li><a href="ประเภท.html">ประเภทวัสดุและครุภัณฑ์</a></li>
+            <li><a href="สถานะและจำนวน.html">ตรวจสอบสถานะและจำนวน</a></li>
+            <li><a href="คอร์สออนไลน์.html">จองคอร์สอบรมออนไลน์</a></li>
         </ul>
-
-        <!-- <nav class="navbar navbar-expand-md navbar-dark " style="height: 100px; background-color: #39b5c1;">
-            <div class="mx-auto order-0">
-                <ion-icon name="menu-outline"></ion-icon> 
-                <i class="fas fa-bars"></i> 
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="btn-group" style="margin-bottom: 5px;">
-                <button class="button">หน้าหลัก</button>
-                <button class="button">การคืน</button>
-                <button class="button">การยืม</button>
-            </div>
-        </nav> -->
-    
     </header>
 
     <div class="container mt-3">
@@ -102,8 +69,6 @@
                     <th>เวลา</th>
                     <th>สถานะ</th>
                     <th>หมายเหตุ</th>
-                    <th>แก้ไขข้อมูล</th>
-                    <th>ลบข้อมูล</th>
                 </tr>
             </thead>
             <tbody id="tuserdata">
