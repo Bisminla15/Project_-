@@ -23,7 +23,7 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #333;
+            background-color: #bfeaff;
         }
 
         li {
@@ -32,14 +32,14 @@
 
         li a {
             display: block;
-            color: white;
+            color: rgb(0, 0, 0);
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
 
         li a:hover {
-            background-color: #111;
+            background-color: #bfeaff;
         }
 </style>
 
@@ -48,45 +48,25 @@
 <body>
     <header>
         <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">การยืม</a></li>
-            <li><a href="#contact">ตรวจสอบจำนวน</a></li>
-            <li><a href="#about">ตรวจสอบสถานะ</a></li>
-            <li><a href="#about">จองคอร์สอบรมออนไลน์</a></li>
-        </ul>
-
-        <!-- <nav class="navbar navbar-expand-md navbar-dark " style="height: 100px; background-color: #39b5c1;">
-            <div class="mx-auto order-0">
-                <ion-icon name="menu-outline"></ion-icon> 
-                <i class="fas fa-bars"></i> 
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="btn-group" style="margin-bottom: 5px;">
-                <button class="button">หน้าหลัก</button>
-                <button class="button">การยืม</button>
-                <button class="button">จองคอร์สอบรมออนไลน์</button>
-            </div>
-
-        </nav> -->
-    
+            <li><a class="active" href="หน้าคืน.html">หน้าหลัก</a></li>
+            <li><a href="ประเภท.html">ประเภทวัสดุและครุภัณฑ์</a></li>
+            <li><a href="สถานะและจำนวน.html">ตรวจสอบสถานะและจำนวน</a></li>
+            <li><a href="คอร์สออนไลน์.html">จองคอร์สอบรมออนไลน์</a></li>
+        </ul>  
     </header>
 
     <div class="container mt-3">
-        <h3>การคืนวัสดุ และครุภัณฑ์</h3>
+        <h3>การคืน</h3>
         <table class="table table-hover">
             <thead>
                 <tr>
-                    <th>รหัสผู้ยืม</th>
-                    <th>ชื่อผู้ยืม</th>
+                    <th>ลำดับ</th>
                     <th>ประเภท</th>
                     <th>ชื่อวัสดุและครุภัณฑ์</th>
                     <th>จำนวน</th>
                     <th>วันที่ยืม</th>
                     <th>วันที่คืน</th>
-                    <th>หมายเหตุ</th>
+                    <th>ส่งคืน(จำนวน)</th>
                 </tr>
             </thead>
             <tbody id="tuserdata">
